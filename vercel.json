@@ -4,7 +4,7 @@
       "BUN_INSTALL": "1"
     }
   },
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
