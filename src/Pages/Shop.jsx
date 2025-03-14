@@ -150,7 +150,7 @@ function Shop() {
               image={
                 product.image.startsWith("http")
                   ? product.image
-                  : `http://localhost:8000${product.image}`
+                  : `https://eccofullstack.onrender.com${product.image}`
               }
               onAddToCart={handleAddToCart}
             />

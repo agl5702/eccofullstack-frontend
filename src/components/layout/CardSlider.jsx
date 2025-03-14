@@ -47,7 +47,7 @@ const CategorySlider = () => {
                         <SwiperSlide key={index}>
                             <CardCustom 
                                 image={categoria.image 
-                                    ? `http://localhost:8000${categoria.image}`  
+                                    ? `https://eccofullstack.onrender.com${categoria.image}`  
                                     : "https://img.freepik.com/foto-gratis/mostrando-carro-carro-compras-linea-signo-grafico_53876-133967.jpg"} 
                                 title={categoria.name || "Sin Nombre"} 
                                 bgColor={colors[index % colors.length]} // Asigna el color cíclicamente

@@ -49,7 +49,7 @@ function Blog() {
             image={blog.image && typeof blog.image === "string" && blog.image.startsWith("http")
               ? blog.image
               : blog.image
-              ? `http://localhost:8000${blog.image}`
+              ? `https://eccofullstack.onrender.com/${blog.image}`
               : null} // No muestra nada si es null
           />
         ))
