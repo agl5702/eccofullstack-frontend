@@ -46,11 +46,7 @@ function Blog() {
             key={blog.id}
             title={blog.title}
             content={blog.content}
-            image={blog.image && typeof blog.image === "string" && blog.image.startsWith("http")
-              ? blog.image
-              : blog.image
-              ? `https://eccofullstack.onrender.com/${blog.image}`
-              : null} // No muestra nada si es null
+            image={blog.image}
           />
         ))
       ) : (
