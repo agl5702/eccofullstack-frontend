@@ -12,7 +12,7 @@ export const useLogin = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/login/", {
+      const response = await fetch("https://eccofullstack.onrender.com/auth/login/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -44,7 +44,7 @@ export const useLogin = () => {
       const refresh_token = localStorage.getItem("refresh_token");
       if (!refresh_token) throw new Error("No hay refresh token disponible");
 
-      const response = await fetch("http://127.0.0.1:8000/auth/refresh/", {
+      const response = await fetch("https://eccofullstack.onrender.com/auth/refresh/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ refresh: refresh_token }),

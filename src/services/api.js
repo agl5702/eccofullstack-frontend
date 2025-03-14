@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000/"; // Cambia esto por la URL de tu API
+const API_URL = "https://eccofullstack.onrender.com/"; // Cambia esto por la URL de tu API
 
 const api = axios.create({
   baseURL: API_URL,

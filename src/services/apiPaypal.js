@@ -8,7 +8,7 @@ export const apiCreateOrderPaypal = async (productos) => {
         quantity: prod.quantity
     }));
 
-    const response = await fetch("http://127.0.0.1:8000/orders/create_order/", {
+    const response = await fetch("https://eccofullstack.onrender.com/orders/create_order/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export const apiCreateOrderPaypal = async (productos) => {
 
 export const apiOnApprovePaypal = async (orderID) => {
     const accessToken = localStorage.getItem("access_token"); 
-    const response = await fetch(`http://127.0.0.1:8000/orders/capture_payment/${orderID}/`, {
+    const response = await fetch(`https://eccofullstack.onrender.com/orders/capture_payment/${orderID}/`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
