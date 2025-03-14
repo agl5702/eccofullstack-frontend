@@ -1,8 +1,10 @@
 {
-    "build": {
-      "env": {
-        "BUN_INSTALL": "1"
-      }
+  "build": {
+    "env": {
+      "BUN_INSTALL": "1"
     }
-  }
-  
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
