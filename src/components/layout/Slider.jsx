@@ -28,7 +28,7 @@ const ImageSlider = () => {
           <SwiperSlide key={index}>
             <Box position="relative">
               {/* Corregido: Ahora `src={item.src}` */}
-              <Image borderRadius="20px" w="100%" maxH="600px" src={item.image} alt={`Imagen ${index + 1}`} />
+              <Image borderRadius="20px" w="100%" maxH="600px" src={item.src} alt={`Imagen ${index + 1}`} />
               <Text 
                 position="absolute"
                 top="50%"
